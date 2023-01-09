@@ -1,0 +1,10 @@
+Cleanup
+Replace harpoon with grapple
+Add icons to whichkey
+Add notifications?
+Learn overseer and create mappings
+Configure lualine and winbar
+
+Plugins:
+ssr
+far
