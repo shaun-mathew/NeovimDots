@@ -7,12 +7,13 @@ vim.opt.scrolloff = 8 -- is one of my fav
 vim.opt.sidescrolloff = 8
 vim.opt.guifont = "monospace:h17" -- the font used in graphical neovim applications
 vim.opt.backspace = "start,eol,indent"
-vim.opt.formatoptions:append({ "cro" })
+--[[ vim.opt.formatoptions:append({ "cro" }) ]]
+vim.opt.formatoptions = "jcroqlnt" -- tcqj
 vim.opt.list = false
 vim.opt.listchars:append("space:⋅")
 vim.opt.listchars:append("eol:↴")
 vim.opt.whichwrap = ""
-vim.opt.smartindent = false
+vim.opt.smartindent = true
 vim.opt.autoindent = false
 vim.opt.laststatus = 3
 vim.opt.clipboard = "unnamedplus"
@@ -44,6 +45,6 @@ vim.opt.hidden = true -- Enable modified buffers in background
 vim.opt.shortmess:append("sI")
 vim.opt.shiftround = true -- Round indent
 -- vim.opt.fileencoding = "utf-8"
-vim.opt.formatoptions:remove({ "c", "r", "o" }) -- don't insert the current comment leader automatically for auto-wrapping comments using 'textwidth', hitting <Enter> in insert mode, or hitting 'o' or 'O' in normal mode.
+--[[ vim.opt.formatoptions:remove({ "c", "r", "o" }) -- don't insert the current comment leader automatically for auto-wrapping comments using 'textwidth', hitting <Enter> in insert mode, or hitting 'o' or 'O' in normal mode. ]]
 -- vim.opt.runtimepath:remove("/usr/share/vim/vimfiles")  -- separate vim plugins from neovim in case vim still in use
 -- vim.opt.hlsearch = false
